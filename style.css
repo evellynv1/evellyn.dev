@@ -424,3 +424,60 @@ body.light .skill-card span {
 body.light .skill-category {
   color: #6b21a8; /* roxo bonito */
 }
+
+@media (max-width: 768px) {
+
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 120px 20px 60px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* PROJETOS */
+  .cards {
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* SKILLS */
+  .skills {
+    padding: 80px 20px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 80px 20px;
+  }
+}
