@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Evellyn Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="navbar" class="nav">
+  <h2>evellyn.dev</h2>
+
+  <ul>
+    <li><a href="#inicio" class="nav-link active" data-i18n="inicio">Início</a></li>
+    <li><a href="#habilidades" class="nav-link" data-i18n="habilidades">Habilidades</a></li>
+    <li><a href="#projetos" class="nav-link" data-i18n="projetos">Projetos</a></li>
+    <li><a href="#contato" class="nav-link" data-i18n="contato">Contato</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button onclick="setLang('pt')">PT</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="toggleTheme()" id="themeBtn">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+
+  <div class="hero-text">
+
+    <span class="badge" data-i18n="badge"></span>
+
+    <h1 data-i18n="titulo"></h1>
+
+    <h2 data-i18n="descricao"></h2>
+
+    <p data-i18n="texto"></p>
+
+    <button class="btn"
+      onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})"
+      data-i18n="botao">
+    </button>
+
+  </div>
+
+  <div class="hero-img">
+    <img src="suafoto1.png" alt="Evellyn">
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="habilidades" class="skills">
+
+  <h2 data-i18n="habilidadesTitulo">Habilidades</h2>
+
+  <p class="subtitle" data-i18n="habilidadesSub">
+    Tecnologias que utilizo no dia a dia
+  </p>
+
+  <h3 class="skill-category">Linguagens</h3>
+
+  <div class="skills-grid">
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><span>HTML</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><span>CSS</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><span>JavaScript</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
+  </div>
+
+  <h3 class="skill-category">Ferramentas</h3>
+
+  <div class="skills-grid">
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><span>Git</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"><span>GitHub</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><span>MySQL</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"><span>PostgreSQL</span></div>
+    <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"><span>VS Code</span></div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projetos" class="projects">
+
+  <h2 data-i18n="projetosTitulo">Projetos</h2>
+
+  <div class="cards">
+
+    <div class="project-card">
+
+      <img src="landingpagelilianmarinho.png" alt="Projeto">
+
+      <div class="card-content">
+
+        <h3 data-i18n="proj1Titulo"></h3>
+
+        <p data-i18n="proj1Desc"></p>
+
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div style="margin-top: 15px; display: flex; gap: 10px;">
+          <a href="https://github.com/evellynv1/Landing-Page-Lilian-Marinho" target="_blank" class="project-link">
+            Código
+          </a>
+
+          <a href="https://evellynv1.github.io/Landing-Page-Lilian-Marinho/" target="_blank" class="project-link">
+            Ver site
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contato" class="contact">
+
+  <h2 data-i18n="contatoTitulo">Entre em Contato</h2>
+
+  <p class="subtitle" data-i18n="contatoSub">
+    Interessado em trabalhar juntos? Vamos conversar.
+  </p>
+
+  <div class="contact-grid">
+
+    <a href="mailto:evellynbarbosa324@gmail.com" class="contact-card">
+      <div class="icon">📧</div>
+      <h3>Email</h3>
+      <p>evellynbarbosa324@gmail.com</p>
+    </a>
+
+    <a href="https://github.com/evellynv1" target="_blank" class="contact-card">
+      <div class="icon">💻</div>
+      <h3>GitHub</h3>
+      <p>@evellynv1</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/evellyngbarbosa" target="_blank" class="contact-card">
+      <div class="icon">🔗</div>
+      <h3>LinkedIn</h3>
+      <p>Evellyn Barbosa</p>
+    </a>
+
+    <a href="https://wa.me/5521959252378" target="_blank" class="contact-card">
+      <div class="icon">💬</div>
+      <h3>WhatsApp</h3>
+      <p>Fale comigo</p>
+    </a>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
